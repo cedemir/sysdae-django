@@ -1,0 +1,17 @@
+{% extends "admin/change_list.html" %}
+
+{% block object-tools-items %}
+    <form id="import-csv-form" action="{% url 'import_csv' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="csv_file" id="csv-file-input" accept=".csv, .xlsx" style="display: none;" onchange="handleFileSelect()">
+        <input type="submit" value="Importar CSV" class="button" onclick="document.getElementById('csv-file-input').click(); return false;">
+    </form>
+    {{ block.super }}
+
+    <script>
+        function handleFileSelect() {
+            document.getElementById('import-csv-form').submit();
+        }
+    </script>
+
+{% endblock %}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            overflow-x: auto;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #6FBEC6;
+            color: #fff;
+        }
+
+        td {
+            background-color: #f2f2f2;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Selecione Estudantes para Importar</h2>
+
+    <form id="import-csv-form" action="{% url 'import_csv' %}" method="post">
+        {% csrf_token %}
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Matrícula</th>
+                    <th>Aluno</th>
+                    <th>Curso</th>
+                    <th>Nome Pai</th>
+                    <th>Telefone Pai</th>
+                    <th>Nome Mãe</th>
+                    <th>Telefone Mãe</th>
+                    <th>Email Responsável</th>
+                    <th>Selecionar</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for student in students_data %}
+                <tr>
+                    <td>{{ student.matricula }}</td>
+                    <td>{{ student.aluno }}</td>
+                    <td>{{ student.curso }}</td>
+                    <td>{{ student.nome_pai }}</td>
+                    <td>{{ student.telefone_pai }}</td>
+                    <td>{{ student.nome_mae }}</td>
+                    <td>{{ student.telefone_mae }}</td>
+                    <td>{{ student.email_responsavel }}</td>
+                    <td>
+                        <input type="checkbox" name="selected_students" value="{{ student.matricula }}">
+                        <input type="hidden" name="matricula_{{ student.matricula }}" value="{{ student.matricula }}">
+                        <input type="hidden" name="aluno_{{ student.matricula }}" value="{{ student.aluno }}">
+                        <input type="hidden" name="curso_{{ student.matricula }}" value="{{ student.curso }}">
+                        <input type="hidden" name="nome_pai_{{ student.matricula }}" value="{{ student.nome_pai }}">
+                        <input type="hidden" name="telefone_pai_{{ student.matricula }}" value="{{ student.telefone_pai }}">
+                        <input type="hidden" name="nome_mae_{{ student.matricula }}" value="{{ student.nome_mae }}">
+                        <input type="hidden" name="telefone_mae_{{ student.matricula }}" value="{{ student.telefone_mae }}">
+                        <input type="hidden" name="email_responsavel_{{ student.matricula }}" value="{{ student.email_responsavel }}">
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <input type="submit" class="btn btn-primary" value="Importar Dados">
+    </form>
+</div>
+
+</body>
+</html>

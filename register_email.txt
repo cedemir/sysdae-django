@@ -1,0 +1,16 @@
+2024-08-29 17:00:23.495474 - 'Superior':elias.camargo@sertao.ifrs.edu.br - 'Estudante':Cedemir Pereira
+2024-08-29 17:00:26.832289 - 'Superior':cristina.franca@sertao.ifrs.edu.br - 'Estudante':Cedemir Pereira
+2024-08-29 17:00:30.090437 - 'Superior':cedemir@gmail.com - 'Estudante':Cedemir Pereira
+2024-08-29 17:00:32.394089 - 'Superior':cedemir@gmail.com - 'Estudante':Cedemir Pereira
+2024-08-29 17:00:34.067843 - 'Superior':gabriele.silva@sertao.ifrs.edu.br - 'Estudante':Cedemir Pereira
+2024-08-29 17:00:35.690989 - 'Superior':gabriele.silva@sertao.ifrs.edu.br - 'Estudante':Cedemir Pereira
+2024-08-29 17:00:37.348212 - 'Superior':joao.meira@sertao.ifrs.edu.br - 'Estudante':Cedemir Pereira
+2024-08-29 17:00:39.091359 - 'Superior':joao.meira@sertao.ifrs.edu.br - 'Estudante':Cedemir Pereira
+2024-08-29 17:31:52.486696 - 'Superior':elias.camargo@sertao.ifrs.edu.br - 'Estudante':Carlos Holbig
+2024-08-29 17:31:55.990403 - 'Superior':cristina.franca@sertao.ifrs.edu.br - 'Estudante':Carlos Holbig
+2024-08-29 17:31:59.658112 - 'Superior':cedemir@gmail.com - 'Estudante':Carlos Holbig
+2024-08-29 17:32:03.098027 - 'Responsavel':holbig@upf.br - 'Estudante':Carlos Holbig
+2024-08-29 21:13:38.847601 - 'Superior':gabriele.silva@sertao.ifrs.edu.br - 'Estudante':Roberto Rabello
+2024-08-29 21:13:42.225778 - 'Superior':joao.meira@sertao.ifrs.edu.br - 'Estudante':Roberto Rabello
+2024-08-29 21:13:45.765862 - 'Responsavel':rabello@upf.br - 'Estudante':Roberto Rabello
+2024-08-29 21:27:37.441834 - 'Superior':cedemir@gmail.com - 'Estudante':Roberto Rabello

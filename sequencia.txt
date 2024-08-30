@@ -1,0 +1,18 @@
+ def method_field(self, obj):
+        if obj.measure and obj.measure.name == 'Advertência':
+            return 'Reunião com Pedagogo\Psicólogo (a)'
+        elif obj.measure and obj.measure.name == 'Advertência Escrita':
+            return 'Reunião com Pais\Pedagogo\Psicólogo\Coordenador DAE (a)'
+        elif obj.measure and obj.measure.name == 'Horas Orientadas':
+            return 'Reunião com Pais\Pedagogo\Psicólogo\Coordenador Residencia (a)'
+        elif obj.measure and obj.measure.name == 'Suspensão':
+            return 'Reunião com Pais\Conselho\Pedagogo\Psicólogo\Coordenador DAE\Coordenador Residencia (a) '
+        elif obj.measure and obj.measure.name == 'Perda Residência':
+            return 'Reunião com Pais\Conselho Disciplinar\Coordenador Residencia (a)'
+        elif obj.measure and obj.measure.name == 'Expulsão':
+            return 'Reunião com Pais\Coordenadores\Diretor (a)'
+        
+    method_field.short_description = 'Metódo'
+
+
+erro=JSONDecodeError Expecting value: line 1 column 1 (char 0)

@@ -1,0 +1,14 @@
+{% extends "admin/base.html" %}
+
+{% block title %}
+Administração do Site
+{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">Controle de Comportamento de Alunos</a></h1>
+{% if user.is_anonymous %}
+  {% include "admin/color_theme_toggle.html" %}
+{% endif %}
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
